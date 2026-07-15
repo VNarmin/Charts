@@ -35,6 +35,11 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
 
+    // Retrofit & JSON parsing
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.gson)
+
     // Serialization
     implementation(libs.kotlinx.serialization.json)
 
