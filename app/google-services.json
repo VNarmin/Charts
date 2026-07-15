@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "279804212292",
+    "project_id": "charts-f2a46",
+    "storage_bucket": "charts-f2a46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279804212292:android:e969f880bbefa67b72f811",
+        "android_client_info": {
+          "package_name": "com.example.charts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4sppYA48p3EOMbUw0yJX9wBDzgv9SIr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
