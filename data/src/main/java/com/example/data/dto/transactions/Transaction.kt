@@ -3,30 +3,24 @@ package com.example.data.dto.transactions
 import com.google.gson.annotations.SerializedName
 
 data class Transaction(
-    @SerializedName(value = "carbonFootprint")
-    val carbonFootprint: Any?,
+    @SerializedName(value = "amount")
+    val amount: Double?,
 
-    @SerializedName(value = "cashback")
-    val cashback: Any?,
+    @SerializedName(value = "category")
+    val category: String?,
 
-    @SerializedName(value = "direction")
-    val direction: String?,
+    @SerializedName(value = "currency")
+    val currency: String?,
 
-    @SerializedName(value = "eligibleForAnalytics")
-    val eligibleForAnalytics: Boolean?,
+    @SerializedName(value = "date")
+    val date: String?,
 
     @SerializedName(value = "id")
     val id: String?,
 
-    @SerializedName(value = "includedInAnalytics")
-    val includedInAnalytics: Boolean?,
+    @SerializedName(value = "merchant")
+    val merchant: String?,
 
-    @SerializedName(value = "source")
-    val source: Source?,
-
-    @SerializedName(value = "status")
-    val status: Status?,
-
-    @SerializedName(value = "transaction")
-    val transaction: TransactionX?
+    @SerializedName(value = "time")
+    val time: String?
 )

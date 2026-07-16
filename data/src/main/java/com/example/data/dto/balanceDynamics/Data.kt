@@ -1,4 +1,4 @@
-package com.example.data.dto.balanceHistory
+package com.example.data.dto.balanceDynamics
 
 import com.google.gson.annotations.SerializedName
 

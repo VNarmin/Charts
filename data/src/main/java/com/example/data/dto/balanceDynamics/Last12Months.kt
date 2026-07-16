@@ -1,8 +1,8 @@
-package com.example.data.dto.balanceHistory
+package com.example.data.dto.balanceDynamics
 
 import com.google.gson.annotations.SerializedName
 
-data class BalanceHistoryResponse(
+data class Last12Months(
     @SerializedName(value = "data")
     val data: Data?,
 

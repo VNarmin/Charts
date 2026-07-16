@@ -1,7 +1,9 @@
 package com.example.charts.di
 
-import org.koin.dsl.module
+import com.example.data.di.dataModule
+import com.example.presentation.di.presentationModule
 
-val appModule = module {
-
-}
+val appModule = listOf(
+    dataModule,
+    presentationModule
+)
