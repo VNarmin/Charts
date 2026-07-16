@@ -13,8 +13,5 @@ data class MonthlyCashbackResponse(
     val periodEnd: String?,
 
     @SerializedName(value = "periodStart")
-    val periodStart: String?,
-
-    @SerializedName(value = "total")
-    val total: Double?
+    val periodStart: String?
 )

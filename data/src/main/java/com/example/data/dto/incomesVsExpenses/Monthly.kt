@@ -1,4 +1,4 @@
-package com.example.data.dto.incomesVersusExpenses
+package com.example.data.dto.incomesVsExpenses
 
 import com.google.gson.annotations.SerializedName
 
