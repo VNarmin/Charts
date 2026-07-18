@@ -1,8 +1,8 @@
-package com.example.data.dto.incomesVsExpenses
+package com.example.data.dto.cashFlow
 
 import com.google.gson.annotations.SerializedName
 
-data class Monthly(
+data class MonthlyCashFlowDTO(
     @SerializedName(value = "expense")
     val expense: Double?,
 
@@ -10,5 +10,5 @@ data class Monthly(
     val income: Double?,
 
     @SerializedName(value = "month")
-    val month: String?
+    val period: String?
 )

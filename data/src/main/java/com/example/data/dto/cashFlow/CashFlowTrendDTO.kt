@@ -1,10 +1,10 @@
-package com.example.data.dto.monthlyCashback
+package com.example.data.dto.cashFlow
 
 import com.google.gson.annotations.SerializedName
 
-data class MonthlyCashbackResponse(
-    @SerializedName(value = "categories")
-    val categories: List<Category?>?,
+data class CashFlowTrendDTO(
+    @SerializedName(value = "monthly")
+    val cashFlow: List<MonthlyCashFlowDTO?>?,
 
     @SerializedName(value = "currency")
     val currency: String?,

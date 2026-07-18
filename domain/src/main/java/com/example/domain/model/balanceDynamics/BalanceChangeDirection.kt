@@ -1,6 +1,7 @@
 package com.example.domain.model.balanceDynamics
 
-enum class ChangeDirection {
+enum class BalanceChangeDirection {
     UP,
-    DOWN
+    DOWN,
+    FLAT
 }

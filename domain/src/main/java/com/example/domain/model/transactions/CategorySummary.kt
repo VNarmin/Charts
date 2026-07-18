@@ -2,9 +2,9 @@ package com.example.domain.model.transactions
 
 import java.math.BigDecimal
 
-data class Category(
+data class CategorySummary(
     val categoryDisplayName: String,
-    val transactionCount: Int,
+    val share: BigDecimal,
     val totalAmount: BigDecimal,
-    val percentage: BigDecimal
+    val transactionCount: Int
 )

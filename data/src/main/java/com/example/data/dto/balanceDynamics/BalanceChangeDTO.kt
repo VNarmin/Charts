@@ -2,7 +2,7 @@ package com.example.data.dto.balanceDynamics
 
 import com.google.gson.annotations.SerializedName
 
-data class Change(
+data class BalanceChangeDTO(
     @SerializedName(value = "direction")
     val direction: String?,
 

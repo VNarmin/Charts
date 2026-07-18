@@ -2,10 +2,7 @@ package com.example.data.dto.balanceDynamics
 
 import com.google.gson.annotations.SerializedName
 
-data class Filters(
-    @SerializedName(value = "currency")
-    val currency: String?,
-
+data class BalanceFiltersDTO(
     @SerializedName(value = "endDate")
     val endDate: String?,
 

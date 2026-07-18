@@ -2,9 +2,9 @@ package com.example.data.dto.balanceDynamics
 
 import com.google.gson.annotations.SerializedName
 
-data class Last12Months(
+data class BalancePeriodResponseDTO(
     @SerializedName(value = "data")
-    val data: Data?,
+    val data: BalanceOverviewDTO?,
 
     @SerializedName(value = "message")
     val message: String?

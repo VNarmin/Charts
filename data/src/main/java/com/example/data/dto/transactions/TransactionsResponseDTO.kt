@@ -2,7 +2,7 @@ package com.example.data.dto.transactions
 
 import com.google.gson.annotations.SerializedName
 
-data class TransactionsResponse(
+data class TransactionsResponseDTO(
     @SerializedName(value = "periodEnd")
     val periodEnd: String?,
 
@@ -10,5 +10,5 @@ data class TransactionsResponse(
     val periodStart: String?,
 
     @SerializedName(value = "transactions")
-    val transactions: List<Transaction?>?
+    val transactions: List<TransactionDTO?>?
 )
