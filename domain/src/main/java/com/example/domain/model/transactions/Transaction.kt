@@ -1,7 +1,7 @@
 package com.example.domain.model.transactions
 
-import com.example.domain.model.common.Currency
-import com.example.domain.model.common.Category
+import com.example.domain.model.enums.Currency
+import com.example.domain.model.enums.Category
 import java.math.BigDecimal
 import java.time.LocalDateTime
 

@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class BalanceOverviewDTO(
     @SerializedName(value = "balance")
-    val balance: BalanceSnapshotDTO?,
+    val balanceSnapshot: BalanceSnapshotDTO?,
 
     @SerializedName(value = "filters")
     val filters: BalanceFiltersDTO?

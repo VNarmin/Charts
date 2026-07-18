@@ -1,4 +1,4 @@
-package com.example.domain.model.balanceDynamics
+package com.example.domain.model.enums
 
 enum class BalancePeriod(val value: String) {
     LAST_24_HOURS(value = "24h"),

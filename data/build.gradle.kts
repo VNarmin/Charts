@@ -14,6 +14,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
+        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
@@ -48,4 +49,7 @@ dependencies {
     implementation(libs.room.ktx)
 
     ksp(libs.room.compiler)
+
+    // Core Library Desugaring
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
 }

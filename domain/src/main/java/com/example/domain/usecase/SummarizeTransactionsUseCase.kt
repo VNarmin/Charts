@@ -1,6 +1,6 @@
 package com.example.domain.usecase
 
-import com.example.domain.model.common.toAZN
+import com.example.domain.model.enums.toAZN
 import com.example.domain.model.transactions.Transaction
 import com.example.domain.model.transactions.CategorySummary
 import java.math.BigDecimal

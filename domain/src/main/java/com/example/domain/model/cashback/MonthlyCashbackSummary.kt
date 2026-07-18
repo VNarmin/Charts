@@ -1,6 +1,6 @@
 package com.example.domain.model.cashback
 
-import com.example.domain.model.common.Currency
+import com.example.domain.model.enums.Currency
 import java.math.BigDecimal
 
 data class MonthlyCashbackSummary(

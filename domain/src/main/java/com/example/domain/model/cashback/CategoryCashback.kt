@@ -1,6 +1,6 @@
 package com.example.domain.model.cashback
 
-import com.example.domain.model.common.Category
+import com.example.domain.model.enums.Category
 import java.math.BigDecimal
 
 data class CategoryCashback(

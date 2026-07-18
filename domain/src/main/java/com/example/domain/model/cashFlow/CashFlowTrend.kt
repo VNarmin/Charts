@@ -1,6 +1,6 @@
 package com.example.domain.model.cashFlow
 
-import com.example.domain.model.common.Currency
+import com.example.domain.model.enums.Currency
 import java.math.BigDecimal
 
 data class CashFlowTrend(

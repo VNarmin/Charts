@@ -1,11 +1,12 @@
-package com.example.domain.model.common
+package com.example.domain.model.enums
 
 import java.math.BigDecimal
 
 enum class Currency {
     AZN,
     EUR,
-    USD
+    USD,
+    UNKNOWN
 }
 
 val exchangeRatesToAZN: Map<Currency, BigDecimal> = mapOf(
@@ -18,4 +19,10 @@ fun toAZN(amount: BigDecimal, currency: Currency) : BigDecimal {
     val exchangeRate = exchangeRatesToAZN.getValue(key = currency)
     val amountAZN = amount * exchangeRate
     return amountAZN
+}
+
+fun String?.toCurrency() : Currency {
+    return Currency.entries.find { currency ->
+        currency.name.equals(this, ignoreCase = true)
+    } ?: Currency.UNKNOWN
 }

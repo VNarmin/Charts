@@ -1,4 +1,4 @@
-package com.example.domain.model.common
+package com.example.domain.model.enums
 
 enum class Category {
     BOOKS,
@@ -14,4 +14,10 @@ enum class Category {
     TRANSFER,
     TRANSPORT,
     UNKNOWN
+}
+
+fun String?.toCategory(): Category {
+    return Category.entries.find { category ->
+        category.name.equals(this, ignoreCase = true)
+    } ?: Category.UNKNOWN
 }
