@@ -1,9 +1,10 @@
 package com.example.domain.model.transactions
 
+import com.example.domain.model.enums.Category
 import java.math.BigDecimal
 
 data class CategorySummary(
-    val categoryDisplayName: String,
+    val category: Category,
     val share: BigDecimal,
     val totalAmount: BigDecimal,
     val transactionCount: Int

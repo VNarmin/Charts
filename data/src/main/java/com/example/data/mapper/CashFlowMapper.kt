@@ -9,7 +9,7 @@ import java.time.YearMonth
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
-internal fun toDomain(
+internal fun toCashFlowTrend(
     metadata: CashFlowMetadata,
     cashFlow: List<MonthlyCashFlowDTO>
 ): CashFlowTrend {

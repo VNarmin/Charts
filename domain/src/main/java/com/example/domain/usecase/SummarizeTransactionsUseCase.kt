@@ -27,7 +27,7 @@ class SummarizeTransactionsUseCase {
                     toAZN(amount = transaction.amount, currency = transaction.currency)
                 }
                 CategorySummary(
-                    categoryDisplayName = category.name,
+                    category = category,
                     transactionCount = transactions.size,
                     totalAmount = totalAmount,
                     share = if (totalExpenses > BigDecimal.ZERO)

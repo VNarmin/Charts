@@ -7,7 +7,7 @@ import com.example.domain.model.cashback.MonthlyCashbackSummary
 import com.example.domain.model.enums.toCategory
 import com.example.domain.model.enums.toCurrency
 
-internal fun toDomain(
+internal fun toMonthlyCashbackSummary(
     metadata: CashbackMetadata,
     categories: List<CategoryCashbackDTO>
 ): MonthlyCashbackSummary {

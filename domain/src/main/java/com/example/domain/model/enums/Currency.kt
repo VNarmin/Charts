@@ -21,7 +21,7 @@ fun toAZN(amount: BigDecimal, currency: Currency) : BigDecimal {
     return amountAZN
 }
 
-fun String?.toCurrency() : Currency {
+fun String.toCurrency() : Currency {
     return Currency.entries.find { currency ->
         currency.name.equals(this, ignoreCase = true)
     } ?: Currency.UNKNOWN

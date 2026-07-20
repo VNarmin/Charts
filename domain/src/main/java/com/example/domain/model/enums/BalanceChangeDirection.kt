@@ -7,7 +7,7 @@ enum class BalanceChangeDirection {
     UNKNOWN
 }
 
-fun String?.toBalanceChangeDirection(): BalanceChangeDirection {
+fun String.toBalanceChangeDirection(): BalanceChangeDirection {
     return BalanceChangeDirection.entries.find { direction ->
         direction.name.equals(this, ignoreCase = true)
     } ?: BalanceChangeDirection.UNKNOWN
