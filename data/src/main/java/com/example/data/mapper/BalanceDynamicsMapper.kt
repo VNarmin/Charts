@@ -12,31 +12,31 @@ import java.time.LocalDateTime
 
 internal fun BalanceSnapshotDTO.toDomain(period: BalancePeriod): BalanceSnapshot {
     return BalanceSnapshot(
-        direction = this.change?.direction.toBalanceChangeDirection(),
-        percentage = this.change?.percentage.toPercentage(),
+        direction = this.change.direction.toBalanceChangeDirection(),
+        percentage = this.change.percentage.toPercentage(),
         balanceHistory = this.history.toDomain(),
         balancePeriod = period,
         currency = this.currency.toCurrency()
     )
 }
 
-private fun String?.toPercentage(): BigDecimal {
+private fun String.toPercentage(): BigDecimal {
     return this
-        ?.removeSuffix("%")
-        ?.toBigDecimalOrNull()
+        .removeSuffix("%")
+        .toBigDecimalOrNull()
         ?.abs()
         ?: BigDecimal.ZERO
 }
 
-private fun BalanceHistoryEntryDTO.toDomain(): BalanceHistoryEntry {
-    return BalanceHistoryEntry(
-        amount = this.amount?.toBigDecimal()?.abs() ?: BigDecimal.ZERO,
-        timestamp = this.toLocalDateTime()
-    )
+private fun List<BalanceHistoryEntryDTO>.toDomain(): List<BalanceHistoryEntry> {
+    return this.map { entry -> entry.toDomain() }
 }
 
-private fun List<BalanceHistoryEntryDTO?>?.toDomain(): List<BalanceHistoryEntry> {
-    return this.orEmpty().mapNotNull { entry -> entry?.toDomain() }
+private fun BalanceHistoryEntryDTO.toDomain(): BalanceHistoryEntry {
+    return BalanceHistoryEntry(
+        amount = this.amount.toBigDecimal().abs(),
+        timestamp = this.toLocalDateTime()
+    )
 }
 
 private fun BalanceHistoryEntryDTO.toLocalDateTime(): LocalDateTime {

@@ -1,11 +1,11 @@
 package com.example.data.dto.balanceDynamics
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.PropertyName
 
 data class BalanceOverviewDTO(
-    @SerializedName(value = "balance")
-    val balanceSnapshot: BalanceSnapshotDTO?,
+    @PropertyName(value = "balance")
+    val balanceSnapshot: BalanceSnapshotDTO = BalanceSnapshotDTO(),
 
-    @SerializedName(value = "filters")
-    val filters: BalanceFiltersDTO?
+    @PropertyName(value = "filters")
+    val filters: BalanceFiltersDTO = BalanceFiltersDTO()
 )

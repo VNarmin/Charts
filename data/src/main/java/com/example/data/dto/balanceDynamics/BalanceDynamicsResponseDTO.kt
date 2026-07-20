@@ -1,11 +1,14 @@
 package com.example.data.dto.balanceDynamics
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.DocumentId
+import com.google.firebase.firestore.PropertyName
 
 data class BalanceDynamicsResponseDTO(
-    @SerializedName(value = "data")
-    val data: BalanceOverviewDTO?,
+    @DocumentId val period: String = "",
 
-    @SerializedName(value = "message")
-    val message: String?
+    @PropertyName(value = "data")
+    val data: BalanceOverviewDTO = BalanceOverviewDTO(),
+
+    @PropertyName(value = "message")
+    val message: String = ""
 )

@@ -1,11 +1,11 @@
 package com.example.data.dto.balanceDynamics
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.PropertyName
 
 data class BalanceHistoryEntryDTO(
-    @SerializedName(value = "amount")
-    val amount: Double?,
+    @PropertyName(value = "amount")
+    val amount: Double = 0.0,
 
-    @SerializedName(value = "timestamp")
-    val timestamp: String?
+    @PropertyName(value = "timestamp")
+    val timestamp: String = ""
 )

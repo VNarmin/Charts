@@ -1,11 +1,14 @@
 package com.example.data.dto.cashback
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.DocumentId
+import com.google.firebase.firestore.PropertyName
 
 data class CategoryCashbackDTO(
-    @SerializedName(value = "cashback")
-    val cashback: Double?,
+    @DocumentId val categoryID: String = "",
 
-    @SerializedName(value = "category")
-    val category: String?
+    @PropertyName(value = "cashback")
+    val cashback: Double = 0.0,
+
+    @PropertyName(value = "category")
+    val category: String = ""
 )

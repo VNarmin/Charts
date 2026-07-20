@@ -1,14 +1,14 @@
 package com.example.data.dto.balanceDynamics
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.PropertyName
 
 data class BalanceFiltersDTO(
-    @SerializedName(value = "endDate")
-    val endDate: String?,
+    @PropertyName(value = "endDate")
+    val endDate: String = "",
 
-    @SerializedName(value = "granularity")
-    val granularity: String?,
+    @PropertyName(value = "granularity")
+    val granularity: String = "",
 
-    @SerializedName(value = "startDate")
-    val startDate: String?
+    @PropertyName(value = "startDate")
+    val startDate: String = ""
 )

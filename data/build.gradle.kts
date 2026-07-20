@@ -32,9 +32,9 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.play.services)
 
-    // Firebase
+    // Firebase Firestore
     implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
 
     // Retrofit & JSON parsing
     implementation(libs.retrofit)

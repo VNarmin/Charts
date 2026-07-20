@@ -1,11 +1,11 @@
 package com.example.data.dto.balanceDynamics
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.PropertyName
 
 data class BalanceChangeDTO(
-    @SerializedName(value = "direction")
-    val direction: String?,
+    @PropertyName(value = "direction")
+    val direction: String = "",
 
-    @SerializedName(value = "percentage")
-    val percentage: String?
+    @PropertyName(value = "percentage")
+    val percentage: String = ""
 )

@@ -1,14 +1,17 @@
 package com.example.data.dto.cashFlow
 
-import com.google.gson.annotations.SerializedName
+import com.google.firebase.firestore.DocumentId
+import com.google.firebase.firestore.PropertyName
 
 data class MonthlyCashFlowDTO(
-    @SerializedName(value = "expense")
-    val expense: Double?,
+    @DocumentId val periodID: String = "",
 
-    @SerializedName(value = "income")
-    val income: Double?,
+    @PropertyName(value = "expense")
+    val expense: Double = 0.0,
 
-    @SerializedName(value = "month")
-    val period: String?
+    @PropertyName(value = "income")
+    val income: Double = 0.0,
+
+    @PropertyName(value = "month")
+    val period: String = ""
 )
